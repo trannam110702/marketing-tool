@@ -1,0 +1,59 @@
+.App {
+  background-color: rgba(241, 241, 241, 1);
+  padding: 16px;
+  height: 100vh;
+}
+
+.main {
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.main > p {
+  max-width: 1000px;
+}
+
+.center {
+  width: fit-content;
+  margin: auto;
+}
+
+#generate-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+#generate-form > label {
+  display: inline-block;
+  margin-top: 6px;
+}
+
+#generate-form > input[type="text"], #generate-form > textarea  {
+  outline: none;
+  padding: 8px 10px;
+  margin-top: 6px;
+  width: 100%;
+  border-radius: 10px;
+  border: .5px black solid;
+}
+
+#generate-form > textarea {
+  height: 100px;
+}
+
+#generate-form > button {
+  height: 43px;
+  width: 100%;
+  max-width: 200px;
+  color: white;
+  background-color: rgba(26, 0, 134, 1);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  display: block;
+  margin-top: 36px;
+  cursor: pointer;
+}
