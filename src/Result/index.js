@@ -27,7 +27,7 @@ const Result = () => {
     })}
     <div className='center button-group'>
         {!loading && <button className="secondary" onClick={() => {setShowResult(false)}}>Let’s start over</button>}
-        {generateButton}
+        {<button onClick={() => window.open('https://shopify.pxf.io/RGG7mN', 'blank')}>Get more ideas</button>}
     </div>
   </div>
 }
