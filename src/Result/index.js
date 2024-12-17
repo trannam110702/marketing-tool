@@ -21,7 +21,7 @@ const Result = () => {
     {formatedData.map((row, rowIndex) => {
         return <div className="row">
             {row.map((item, index) => {
-               return <div className="collumn">{(rowIndex + 1)*(index + 1)}. {item}</div>
+               return <div className="collumn">{4*(rowIndex) + (index + 1)}. {item}</div>
             })}
         </div>
     })}

@@ -1,7 +1,6 @@
 .App {
-  background-color: rgba(241, 241, 241, 1);
   padding: 16px;
-  height: 100vh;
+  font-weight: 500;
 }
 
 .main {
@@ -27,7 +26,7 @@
 
 #generate-form > label {
   display: inline-block;
-  margin-top: 6px;
+  margin-top: 20px;
 }
 
 #generate-form > input[type="text"], #generate-form > textarea  {
@@ -65,13 +64,15 @@ button.secondary {
 
 .button-group {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 36px;
   margin-top: 36px;
 }
 
 .result {
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   font-weight: 500;
 }
 
@@ -79,9 +80,31 @@ button.secondary {
   width: 25%;
 }
 
+@media screen and (max-width: 700px) {
+  .collumn {
+    width: 100%;
+  }
+  .row {
+    flex-wrap: wrap;
+  }
+  .button-group {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+  } 
+}
+
 .row {
   display: flex;
-  text-wrap: nowrap;
   gap: 16px;
-  margin-top: 8px;
+  margin-top: 16px;
+  text-wrap: wrap;
+  line-break: anywhere;
+}
+
+.validation {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: rgba(142, 31, 11, 1);
 }

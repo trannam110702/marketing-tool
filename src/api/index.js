@@ -1,5 +1,5 @@
 const getNames = async (formData) => {
-    const data = await fetch('https://avada-seo-staging-8.firebaseapp.com/proxy/chat', {
+    const data = await fetch('http://localhost:3000/proxy/chat', {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
