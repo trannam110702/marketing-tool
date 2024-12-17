@@ -1,5 +1,12 @@
-const getNames = async (formDatat) => {
-    return fetch('https://avada-seo.firebaseapp.com/lighthouse/audit?shopId=xRv0XIbwqeIY3md5EIIv&url=https%3A%2F%2Fnam-seo-dev-local4-store.myshopify.com&passwordStore=1&device=desktop&uploadResult=true&throttling=dense4G');
+const getNames = async (formData) => {
+    const data = await fetch('http://localhost:3000/proxy/chat', {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        }
+      });
+    return data.json()
 }
 
 export default getNames;

@@ -43,10 +43,9 @@
   height: 100px;
 }
 
-#generate-form > button {
+button {
   height: 43px;
-  width: 100%;
-  max-width: 200px;
+  width: 200px;
   color: white;
   background-color: rgba(26, 0, 134, 1);
   outline: none;
@@ -56,4 +55,33 @@
   display: block;
   margin-top: 36px;
   cursor: pointer;
+}
+
+button.secondary {
+  color: rgba(26, 0, 134, 1);
+  background-color: white;
+  border: 1px rgba(26, 0, 134, 1) solid;
+}
+
+.button-group {
+  display: flex;
+  gap: 36px;
+  margin-top: 36px;
+}
+
+.result {
+  width: 100%;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+.collumn {
+  width: 25%;
+}
+
+.row {
+  display: flex;
+  text-wrap: nowrap;
+  gap: 16px;
+  margin-top: 8px;
 }
