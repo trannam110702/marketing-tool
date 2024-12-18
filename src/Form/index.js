@@ -36,7 +36,6 @@ const Form = () => {
   </div> : "Generate name ideas"}</button>;
 
     return <div className='center' id="generate-form">
-    <label htmlFor="description">Describe your business industry/niche (required):</label><br/>
     <textarea placeholder="Describe your business, including what type of business you are, what makes it unique, what your brand's core products are Ex: A sustainable brand making eco-friendly soybean wax food wraps and candles for young adults" required value={formData.description} onChange={e => setFormData(prev => {
       setValidation(null)
       return ({...prev, description: e.target.value})
@@ -47,8 +46,7 @@ const Form = () => {
 <path fill-rule="evenodd" clip-rule="evenodd" d="M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10ZM15.5 10C15.5 13.0376 13.0376 15.5 10 15.5C6.96243 15.5 4.5 13.0376 4.5 10C4.5 6.96243 6.96243 4.5 10 4.5C13.0376 4.5 15.5 6.96243 15.5 10Z" fill="#8E1F0B"/>
 </svg>
 {validatation?.description}</div>}
-    <label htmlFor="keyword">Keywords (optional): </label><br/>
-    <input placeholder="keywords you want to add to your business name" value={formData.keyword} name="keyword" id="keyword" type="text" onChange={e => setFormData(prev => ({...prev, keyword: e.target.value}))}/><br/><br/>
+    <input placeholder="Keywords you want to add to your business name" value={formData.keyword} name="keyword" id="keyword" type="text" onChange={e => setFormData(prev => ({...prev, keyword: e.target.value}))}/><br/><br/>
     <div className='center generate-btn'>{generateButton}</div>
   </div>
 }

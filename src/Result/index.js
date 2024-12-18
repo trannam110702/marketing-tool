@@ -17,7 +17,8 @@ const Result = () => {
             <li>Describe your business: {formData.description}</li>
             <li>Keyword: {formData.keyword}</li>
         </ul>
-        <h2>Top 20 Unique Store Names of {new Date().getFullYear()} to Inspire You</h2>
+        <h2>Here are some names we think you might like</h2>
+    <div className="result-items">
     {formatedData.map((row, rowIndex) => {
         return <div className="row">
             {row.map((item, index) => {
@@ -25,6 +26,7 @@ const Result = () => {
             })}
         </div>
     })}
+    </div>
     <div className='center button-group'>
         {!loading && <button className="secondary" onClick={() => {setShowResult(false)}}>Let’s start over</button>}
         {<button onClick={() => window.open('https://shopify.pxf.io/RGG7mN', 'blank')}>Get more ideas</button>}

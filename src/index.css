@@ -3,7 +3,6 @@
 body {
   margin: 0;
   font-family: "Inter", serif;
-  background-color: rgba(241, 241, 241, 1);
 }
 
 code {
@@ -19,4 +18,10 @@ h1 {
   box-sizing: border-box;
   font-family: "Inter", serif;
   font-optical-sizing: auto;
+  font-size: 16px;
+}
+
+.center {
+  width: fit-content;
+  margin: auto;
 }

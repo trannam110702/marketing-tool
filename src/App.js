@@ -14,10 +14,11 @@ function App() {
   const [result, setResult] = useState([]);
 
   return <AppContext.Provider value={{formData, setFormData, showResult, setShowResult, result, setResult, loading, setLoading}}>
-    <div className="App">
+    <div className="App center">
   <div className='main'>
-    <h1 className='center'>Catchy AI Business Name Ideas {new Date().getFullYear()}</h1>
-    <p className='center'>Name it. Brand it. Own it. <br/>Discover your perfect shop name with Avada’s smart generator! This powerful tool inspires you with creative and unique shop name ideas that perfectly align with your brand’s mission and core values.</p>
+    <div>
+    <h1 className='center'>Business Name Ideas by Avada Commerce</h1>
+    <p className='center description'>The Perfect AI Tool to Generate Business Name and Online Store Ideas in Just 5 Seconds.</p></div>
     {showResult ? <Result/> : <Form />}
   </div>
 </div>

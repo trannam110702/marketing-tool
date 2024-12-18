@@ -1,23 +1,46 @@
 .App {
   padding: 16px;
   font-weight: 500;
+  width: 100%;
+  max-width: 1100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 16px;
+  margin-top: 36px;
+}
+
+h1, h2 {
+  color: rgba(15, 4, 152, 1);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.description {
+  margin-top: 6px;
+  color: rgba(92, 92, 92, 1);
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
 }
 
 .main {
-  padding: 80px 0;
+  padding: 80px 26px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 24px;
 }
 
 .main > p {
   max-width: 1000px;
 }
 
-.center {
-  width: fit-content;
-  margin: auto;
-}
+
 
 #generate-form {
   width: 100%;
@@ -32,13 +55,14 @@
 #generate-form > input[type="text"], #generate-form > textarea  {
   outline: none;
   padding: 8px 10px;
-  margin-top: 6px;
+  margin-top: 12px;
   width: 100%;
   border-radius: 10px;
-  border: .5px black solid;
+  border: .5px rgba(15, 4, 152, 1) solid;
 }
 
 #generate-form > textarea {
+  border-color: rgba(15, 4, 152, 1);
   height: 100px;
 }
 
@@ -67,13 +91,25 @@ button.secondary {
   justify-content: center;
   align-items: center;
   gap: 36px;
-  margin-top: 36px;
+  margin-top: 12px;
 }
 
 .result {
   width: 100%;
   max-width: 900px;
   font-weight: 500;
+}
+
+.result-items {
+  margin-top: 16px;
+  padding: 20px;
+  border: 1px rgba(15, 4, 152, 1) solid;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .collumn {
@@ -97,7 +133,6 @@ button.secondary {
 .row {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .validation {
