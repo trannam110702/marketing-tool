@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {useAppContext} from "../App"
 import getNames from "../api"
 
@@ -24,11 +24,20 @@ const Form = () => {
     }
  }
 
-  const generateButton = <button disabled={loading} onClick={generate} >{loading ? "Generating..." : "Generate name ideas"}</button>;
+ useEffect(() => {
+  if (document.getElementById("description"))
+  document.getElementById("description").placeholder = "Describe your business, including what type of business you are, what makes it unique, what your brand's core products are \nEx: A sustainable brand making eco-friendly soybean wax food wraps and candles for young adults";
+ }, [])
+
+  const generateButton = <button disabled={loading} onClick={generate} >{loading ? <div className="lds-ring">
+    <div />
+    <div />
+    <div />
+  </div> : "Generate name ideas"}</button>;
 
     return <div className='center' id="generate-form">
     <label htmlFor="description">Describe your business industry/niche (required):</label><br/>
-    <textarea placeholder="Describe your business, including what type of business you are, what makes it unique, what your brand's core products are" required value={formData.description} onChange={e => setFormData(prev => {
+    <textarea placeholder="Describe your business, including what type of business you are, what makes it unique, what your brand's core products are Ex: A sustainable brand making eco-friendly soybean wax food wraps and candles for young adults" required value={formData.description} onChange={e => setFormData(prev => {
       setValidation(null)
       return ({...prev, description: e.target.value})
     })} name="description" id="description" type="text"/><br/>
@@ -40,7 +49,7 @@ const Form = () => {
 {validatation?.description}</div>}
     <label htmlFor="keyword">Keywords (optional): </label><br/>
     <input placeholder="keywords you want to add to your business name" value={formData.keyword} name="keyword" id="keyword" type="text" onChange={e => setFormData(prev => ({...prev, keyword: e.target.value}))}/><br/><br/>
-    <div className='center'>{generateButton}</div>
+    <div className='center generate-btn'>{generateButton}</div>
   </div>
 }
 
