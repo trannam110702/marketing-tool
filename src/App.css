@@ -1,188 +1,189 @@
 .App {
-  padding: 16px;
-  font-weight: 500;
-  width: 100%;
-  max-width: 1100px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-radius: 16px;
-  margin-top: 36px;
+    padding: 16px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 1100px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 16px;
+    margin-top: 36px;
 }
 
 h1, h2 {
-  color: rgba(15, 4, 152, 1);
-  font-weight: 700;
+    color: rgba(15, 4, 152, 1);
+    font-weight: 700;
 }
 
 h1 {
-  font-size: 30px;
+    font-size: 30px;
 }
 
 h2 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .description {
-  margin-top: 6px;
-  color: rgba(92, 92, 92, 1);
-  font-weight: 500;
-  font-size: 17px;
-  text-align: center;
+    margin-top: 6px;
+    color: rgba(92, 92, 92, 1);
+    font-weight: 500;
+    font-size: 17px;
+    text-align: center;
 }
 
 .main {
-  padding: 80px 26px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
+    padding: 80px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .main > p {
-  max-width: 1000px;
+    max-width: 1000px;
 }
-
 
 
 #generate-form {
-  width: 100%;
-  max-width: 700px;
+    width: 100%;
+    max-width: 700px;
 }
 
 #generate-form > label {
-  display: inline-block;
-  margin-top: 20px;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-#generate-form > input[type="text"], #generate-form > textarea  {
-  outline: none;
-  padding: 8px 10px;
-  margin-top: 12px;
-  width: 100%;
-  border-radius: 10px;
-  border: .5px rgba(15, 4, 152, 1) solid;
+#generate-form > input[type="text"], #generate-form > textarea {
+    outline: none;
+    padding: 8px 10px;
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: .5px rgba(15, 4, 152, 1) solid;
 }
 
 #generate-form > textarea {
-  border-color: rgba(15, 4, 152, 1);
-  height: 100px;
+    border-color: rgba(15, 4, 152, 1);
+    height: 100px;
 }
 
 button {
-  height: 43px;
-  width: 200px;
-  color: white;
-  background-color: rgba(26, 0, 134, 1);
-  outline: none;
-  border: none;
-  border-radius: 10px;
-  font-weight: 700;
-  display: block;
-  margin-top: 36px;
-  cursor: pointer;
+    height: 43px;
+    width: 200px;
+    color: white;
+    background-color: rgba(26, 0, 134, 1);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    display: block;
+    margin-top: 36px;
+    cursor: pointer;
 }
 
 button.secondary {
-  color: rgba(26, 0, 134, 1);
-  background-color: white;
-  border: 1px rgba(26, 0, 134, 1) solid;
+    color: rgba(26, 0, 134, 1);
+    background-color: white;
+    border: 1px rgba(26, 0, 134, 1) solid;
 }
 
 .button-group {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 36px;
-  margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    margin-top: 12px;
 }
 
 .result {
-  width: 100%;
-  max-width: 900px;
-  font-weight: 500;
+    width: 100%;
+    max-width: 900px;
+    font-weight: 500;
 }
 
 .result-items {
-  margin-top: 16px;
-  padding: 20px;
-  border: 1px rgba(15, 4, 152, 1) solid;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  font-weight: 700;
-  font-size: 14px;
+    margin-top: 16px;
+    padding: 20px;
+    border: 1px rgba(15, 4, 152, 1) solid;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .collumn {
-  width: 25%;
+    width: 25%;
 }
 
 @media screen and (max-width: 700px) {
-  .collumn {
-    width: 100%;
-  }
-  .row {
-    flex-wrap: wrap;
-  }
-  .button-group {
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 12px;
-  } 
+    .collumn {
+        width: 100%;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .button-group {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 12px;
+    }
 }
 
 .row {
-  display: flex;
-  gap: 16px;
+    display: flex;
+    gap: 16px;
 }
 
 .validation {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  color: rgba(142, 31, 11, 1);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: rgba(142, 31, 11, 1);
 }
 
 .lds-ring {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
 }
 
 .lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border: 8px solid #fff;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
 }
 
 .lds-ring {
-  zoom: 0.35;
+    zoom: 0.35;
 }
 
 .lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
+    animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
+    animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
+    animation-delay: -0.15s;
 }
 
 @keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

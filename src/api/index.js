@@ -3,9 +3,9 @@ const getNames = async (formData) => {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
-          "Content-Type": "application/json",
+            "Content-Type": "application/json",
         }
-      });
+    });
     return data.json()
 }
 
