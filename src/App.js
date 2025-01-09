@@ -7,7 +7,7 @@ const AppContext = createContext({})
 
 export const useAppContext = () => useContext(AppContext);
 
-function App() {
+function App({title, style = 'blog-post'}) {
     const [showResult, setShowResult] = useState(false);
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({description: "", keyword: ""});
@@ -18,7 +18,7 @@ function App() {
         <div className="App center">
             <div className='main'>
                 <div>
-                    <h1 className='center'>Business Name Ideas by Avada Commerce</h1>
+                    <h1 className='center'>{title || 'Business Name Ideas by Avada Commerce'}</h1>
                     <p className='center description'>The Perfect AI Tool to Generate Business Name and Online Store
                         Ideas in Just 5 Seconds.</p></div>
                 {showResult ? <Result/> : <Form/>}

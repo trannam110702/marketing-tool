@@ -5,10 +5,11 @@ import App from './App';
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
-console.log(rootElement.getAttribute('data-title'))
+const title = rootElement.getAttribute('data-title');
+const style = rootElement.getAttribute('data-style');
 root.render(
     <React.StrictMode>
-        <App/>
+        <App title={title} style={style}/>
     </React.StrictMode>
 );
 
